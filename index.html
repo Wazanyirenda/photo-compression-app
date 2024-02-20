@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Image Compression</title>
+</head>
+<body>
+    <div class="compression-container">
+        <h2>Image Compression</h2>
+        <!-- Drop zone for drag-and-drop -->
+        <div id="dropZone" class="drop-zone" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
+            <p>Drag and drop an image here</p>
+        </div>
+        <!-- File input for selecting images -->
+        <label for="imageInput">Or select an image from your device:</label>
+        <input type="file" accept="image/*" id="imageInput" onchange="handleImageUpload()">
+        <!-- Display area for images and download link -->
+        <div id="imageDisplay">
+            <p>No image uploaded</p>
+        </div>
+        <!-- Compress Image button -->
+        <button onclick="compressImage()">Compress Image</button>
+        <a id="downloadLink" style="display: none;" download="compressed_image.jpg">Download Compressed Image</a>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.compression-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.drop-zone {
+    border: 2px dashed #4caf50;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.drop-zone.drag-over {
+    background-color: #f5f5f5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#imageDisplay {
+    margin-top: 20px;
+}
+
+#imageDisplay img {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+#downloadLink {
+    color: #4caf50;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets (Portrait) and Smaller */
+@media only screen and (max-width: 768px) {
+    .compression-container {
+        padding: 15px;
+    }
+
+    .drop-zone {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+/* Tablets (Landscape) and Smaller Desktops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .compression-container {
+        padding: 20px;
+    }
+
+    .drop-zone {
+        padding: 20px;
+    }
+}
+
+/* Larger Desktops */
+@media only screen and (min-width: 1025px) {
+    .compression-container {
+        padding: 30px;
+    }
+
+    .drop-zone {
+        padding: 30px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+}
