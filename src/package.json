@@ -1,0 +1,12 @@
+{
+  "name": "photo-compressor-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+      "start": "node server.js"
+  },
+  "dependencies": {
+    "image-optim": "^3.0.0"
+  }
+}
+
